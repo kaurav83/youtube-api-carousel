@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
-import SubscribeOurChannel from './SubscribeOurChannel/SubscribeOurChannel';
-import './SubscribeOurChannel/subscribe-our-channel.scss';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import SomeContent from './SomeContent';
+import Catalog from './catalog/Catalog';
+import Card from './catalog/Card';
+import Home from './Home';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <SubscribeOurChannel />
-        </header>
+        {/* <SomeContent /> */}
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/some-content" component={SomeContent} />
+              <Route path="/catalog" component={Catalog} />
+              <Route path="/card/:_id" component={Card} />
+            </Switch>
+          </Router>
       </div>
     );
   }
