@@ -17,7 +17,8 @@
     }
 
     &__input-field {
-        padding: 6px 0;
+        padding: 0 5px;
+        height: 40px;
     }
 
     &__label {
@@ -30,7 +31,7 @@
         color: #fff;
         border: 0;
         grid-column: 2;
-        max-width: 200px;
+        max-width: 195px;
     }
 
     // СПОСОБ ДОСТАВКИ
@@ -63,7 +64,7 @@
 
     &__radio-container {
         display: grid;
-        grid-template-columns: 240px repeat(auto-fit, minmax(100px, 1fr)) 10px 1px;
+        grid-template-columns: 54% repeat(auto-fit, minmax(100px, 1fr)) 20% 1%;
         // grid-template-areas: 
         // "checkbox cost term tooltip";
     }

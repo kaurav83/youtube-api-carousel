@@ -25,6 +25,10 @@ class FormFirstStap extends Component {
               this.setState({
                 allFieldsAreFilled: true
               })
+        } else {
+            this.setState({
+                allFieldsAreFilled: false
+            })
         }
     }
 
@@ -32,7 +36,7 @@ class FormFirstStap extends Component {
         e.preventDefault(e);
     }
 
-    render() {
+    render() { console.log(this.state.allFieldsAreFilled)
         return(
             <div className="container-purchase">
                 <form 
