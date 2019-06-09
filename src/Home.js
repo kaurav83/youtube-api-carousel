@@ -4,6 +4,8 @@ import './SubscribeOurChannel/subscribe-our-channel.scss';
 import GetComment from './GetComment';
 import SomeContent from './SomeContent';
 import FormSerge from './FormSerge/FormSerge';
+import BottomBasket from './BottomBasket/BottomBasket';
+import FormFirstStap from './Checkout/FormFirstStap';
 
 class Home extends React.Component {
 
@@ -18,6 +20,8 @@ class Home extends React.Component {
                 <main>
                     <GetComment />
                     <FormSerge />
+                    <BottomBasket />
+                    <FormFirstStap />
                 </main>
             </div>
         )
